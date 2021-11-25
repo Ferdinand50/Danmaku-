@@ -6,22 +6,23 @@ public class bullet : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float speed = 20f;
-    public float lifetime = 2;
+    public float speed = 5f;
+    public float lifeTime = 20f;
     public Rigidbody2D rb;
 
     void Start()
     {
         rb.velocity = transform.right * speed;
-        //Invoke("DestroyProjectile", lifettime);
+        Invoke("DestroyProjectile", lifeTime);
+
+
 
     }
 
-    void DestroyProjectile() {
+    void DestroyProjectile(){
         Destroy(gameObject);
-        da
-        
     }
+    
 
     // Update is called once per frame
 

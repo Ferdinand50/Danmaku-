@@ -1,0 +1,5 @@
+C:\Keio\First semester\real world interactive systems\sourcetree\Assets\obj\Debug\net6.0\Assets.csproj.AssemblyReference.cache
+C:\Keio\First semester\real world interactive systems\sourcetree\Assets\obj\Debug\net6.0\Assets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Keio\First semester\real world interactive systems\sourcetree\Assets\obj\Debug\net6.0\Assets.AssemblyInfoInputs.cache
+C:\Keio\First semester\real world interactive systems\sourcetree\Assets\obj\Debug\net6.0\Assets.AssemblyInfo.cs
+C:\Keio\First semester\real world interactive systems\sourcetree\Assets\obj\Debug\net6.0\Assets.csproj.CoreCompileInputs.cache

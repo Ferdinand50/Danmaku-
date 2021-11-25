@@ -32,8 +32,8 @@ public class ai_movement : MonoBehaviour
     }
 
     Vector2 GetRandomPosition() {
-        float randomX = UnityEngine.Random.Range(minX, maxX);
-        float randomY = UnityEngine.Random.Range(minY, maxY);
+        float randomX = Random.Range(minX, maxX);
+        float randomY = Random.Range(minY, maxY);
         return new Vector2(randomX, randomY);
     }
 
