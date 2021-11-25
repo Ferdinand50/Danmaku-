@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class gun : MonoBehaviour
 {
-     
     public Transform firePointleft;
     public Transform firePointright;
     public Transform firePointmiddle;
