@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         
-        targetPosition = new Vector2(0.0f, 0.0f);
+        targetPosition = new Vector2(0.0f, -3.0f);
     }
     
 
@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
             targetPosition = Input.mousePosition;
             targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
         }
-        // this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
-        this.transform.position = targetPosition;
+        this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
+        //this.transform.position = targetPosition;
 
            
        

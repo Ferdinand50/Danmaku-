@@ -27,9 +27,21 @@ public class gun : MonoBehaviour
     void Shoot ()
     {
 
-        Instantiate(bulletPrefab, firePointright.position, firePointright.rotation);
-        Instantiate(bulletPrefab, firePointleft.position, firePointleft.rotation);
-        Instantiate(bulletPrefab, firePointmiddle.position, firePointmiddle.rotation);
+        var bulletRight = Instantiate(bulletPrefab, firePointright.position, firePointright.rotation);
+        Physics2D.IgnoreCollision(bulletRight.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        var bulletLeft = Instantiate(bulletPrefab, firePointleft.position, firePointleft.rotation);
+        Physics2D.IgnoreCollision(bulletLeft.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+        var bulletMid = Instantiate(bulletPrefab, firePointmiddle.position, firePointmiddle.rotation);
+        Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
+        Physics2D.IgnoreCollision(bulletRight.GetComponent<Collider2D>(), bulletLeft.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(bulletRight.GetComponent<Collider2D>(), bulletMid.GetComponent<Collider2D>());
+
+        Physics2D.IgnoreCollision(bulletLeft.GetComponent<Collider2D>(), bulletRight.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(bulletLeft.GetComponent<Collider2D>(), bulletMid.GetComponent<Collider2D>());
+
+        Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), bulletRight.GetComponent<Collider2D>());
+        Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), bulletLeft.GetComponent<Collider2D>());
 
     }
 }
