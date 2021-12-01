@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnCollision : MonoBehaviour
+public class enemyCollision : MonoBehaviour
 {
-    public int healthPoints ;
-
     // Start is called before the first frame update
+
+    public int healthPoints;
+
     void Start()
     {
-        healthPoints = 3;
+        healthPoints = 20;
     }
-
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.name != "Cruiser")
+        if (coll.gameObject.name != "Player")
         {
             Destroy(coll.gameObject);
         }
