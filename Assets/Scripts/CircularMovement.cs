@@ -13,7 +13,7 @@ public class CircularMovement : MonoBehaviour
     [SerializeField]
      float rotationRadius = 6f, angularSpeed = -12f;
     [SerializeField]
-     float posX, posY, angle = 0f;
+     float posX, posY, angle = -1;
      float convert = 1f;
 
 
@@ -25,7 +25,7 @@ public class CircularMovement : MonoBehaviour
         transform.position = new Vector2 (posX, posY);
         angle = angle + convert*Time.deltaTime * angularSpeed;
         
-        if (angle <= -3.14|| angle > 0)  {
+        if (angle <= -2.8|| angle >= -0.34)  {
         convert = -1*convert;
         }
             
