@@ -10,6 +10,8 @@ public class ai_movement : MonoBehaviour
     public float minY;
     public float maxY;
 
+    float roation;
+
     Vector2 targetPosition;
 
     public float speed;
