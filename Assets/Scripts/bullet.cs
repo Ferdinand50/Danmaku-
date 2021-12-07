@@ -14,6 +14,8 @@ public class bullet : MonoBehaviour
     {
         rb.velocity = transform.right * speed;
         Invoke("DestroyProjectile", lifeTime);
+        
+        
 
 
 

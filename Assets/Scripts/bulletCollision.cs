@@ -13,7 +13,7 @@ public class bulletCollision : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.name != "Cruiser")
+        if (coll.gameObject.CompareTag("EnemyProjectile"))
         {
             Destroy(coll.gameObject);
         }

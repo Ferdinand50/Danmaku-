@@ -43,5 +43,9 @@ public class gun : MonoBehaviour
         Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), bulletRight.GetComponent<Collider2D>());
         Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), bulletLeft.GetComponent<Collider2D>());
 
+        bulletLeft.tag = "EnemyProjectile";
+        bulletMid.tag = "EnemyProjectile";
+        bulletRight.tag = "EnemyProjectile";
+
     }
 }

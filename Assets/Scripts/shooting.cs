@@ -27,5 +27,7 @@ public class shooting : MonoBehaviour
 
         var playerBullet = Instantiate(playerBulletPrefab, playerGun.position, playerGun.rotation);
         Physics2D.IgnoreCollision(playerBullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+
+        playerBullet.tag = "Projectile";
     }
 }
