@@ -15,7 +15,12 @@ public class enemyCollision : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.name == "playerBullet")
+        if (coll.gameObject.tag == "EnemyProjectile")
+        {
+        Physics.IgnoreCollision(coll.gameObject.GetComponent<Collider>(), GetComponent<Collider>());
+        }
+
+        if (coll.gameObject.CompareTag("Projectile"))
         {
             Destroy(coll.gameObject);
             healthPoints = healthPoints - 1;
