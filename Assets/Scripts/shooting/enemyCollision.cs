@@ -32,7 +32,16 @@ public class enemyCollision : MonoBehaviour
     {
         if (healthPoints == 0)
         {
+            if (gameObject.name.Contains("Cruiser") == true)
+            {
+                GlobalVariableStorage.score = GlobalVariableStorage.score + 500;
+            }
+            if (gameObject.name.Contains("Frigate") == true)
+            {
+                GlobalVariableStorage.score = GlobalVariableStorage.score + 100;
+            }
             Destroy(gameObject);
+            
         }
     }
 }

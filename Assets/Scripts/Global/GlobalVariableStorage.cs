@@ -5,11 +5,14 @@ using UnityEngine;
 public class GlobalVariableStorage : MonoBehaviour
 {
 
-    public int globalVariable;
+    public static int globalVariable;
+    public static int playerHealth;
+    public static int score;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerHealth = 3;
+        score = 0;
     }
 
     // Update is called once per frame

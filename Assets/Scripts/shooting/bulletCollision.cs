@@ -16,7 +16,9 @@ public class bulletCollision : MonoBehaviour
         if (coll.gameObject.CompareTag("EnemyProjectile"))
         {
             Destroy(coll.gameObject);
+            GlobalVariableStorage.score = GlobalVariableStorage.score + 10;
         }
         Destroy(gameObject);
+        
     }
 }
