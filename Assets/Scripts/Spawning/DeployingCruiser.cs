@@ -5,7 +5,7 @@ using UnityEngine;
 public class DeployingCruiser : MonoBehaviour
 {
     public GameObject CruiserPrefab;
-    public float respawnTime = 15.0f;
+    public float respawnTime = 12.0f;
     private Vector2 screenBounds;
     // Start is called before the first frame update
     void Start()
@@ -18,11 +18,12 @@ public class DeployingCruiser : MonoBehaviour
             //spawnPosition at Bounder x and random between ymin and ymax
             //a.transform.position = new Vector2(screenBounds.x, Random.Range(-screenBounds.y, screenBounds.y));
             a.transform.position = new Vector2(3, 2);
+            Level1Storage.CruiserCount ++;
         }
     
-    IEnumerator FrigateWave() {
+    IEnumerator FrigateWave(){
         // change this to boolean to stop spawning if certain things happend
-        while(true){
+        while(Level1Storage.CruiserCount < 1){
         yield return new WaitForSeconds(respawnTime);
         spawnEnemy();    
         }

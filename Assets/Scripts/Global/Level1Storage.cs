@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Level1Storage : MonoBehaviour
 {   
-    public static int FregatesCount = 0;
-    // Start is called before the first frame update
-    //void Update(){
-         //if (FrigateWave().isCalled)
-    //{
-      //  FregatesCount++;
-    //}
+    public static int FregatesCount;
+    public static int CruiserCount;
 
- //}
-
-    // Update is called once per frame
+    void Start()
+    {
+        FregatesCount = 0;
+        CruiserCount = 0;
+    }
 
 }
