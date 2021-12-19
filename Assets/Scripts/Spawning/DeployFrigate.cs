@@ -8,6 +8,9 @@ public class DeployFrigate : MonoBehaviour
     public GameObject FrigatePrefab;
 
     public float respawnTime = 7.0f;
+    public float minx_outside =-8f;
+    public float maxx_outside =8f;
+    public float y_outside =5f;
     private Vector2 screenBounds;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +24,7 @@ public class DeployFrigate : MonoBehaviour
             GameObject a = Instantiate(FrigatePrefab) as GameObject;
             //spawnPosition at Bounder x and random between ymin and ymax
             //a.transform.position = new Vector2(screenBounds.x, Random.Range(-screenBounds.y, screenBounds.y));
-            a.transform.position = GetRandomPosition();
+            a.transform.position = GetOutsidePosition();
             Level1Storage.FregatesCount ++; 
         }
     
@@ -30,14 +33,14 @@ public class DeployFrigate : MonoBehaviour
         while(Level1Storage.FregatesCount < 5){
         yield return new WaitForSeconds(respawnTime);
         spawnEnemy();
+        spawnEnemy();
         }
 
     }
 
-    Vector2 GetRandomPosition() {
-        float randomX = Random.Range(-8, 8);
-        float randomY = Random.Range(-0, 3);
-        return new Vector2(randomX, randomY);
+    Vector2 GetOutsidePosition() {
+        float randomOutsideX = Random.Range(minx_outside, maxx_outside);
+        return new Vector2(randomOutsideX, y_outside);
     }
 
 }

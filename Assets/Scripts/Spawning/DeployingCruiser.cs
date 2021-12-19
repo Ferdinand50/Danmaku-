@@ -17,7 +17,7 @@ public class DeployingCruiser : MonoBehaviour
             GameObject a = Instantiate(CruiserPrefab) as GameObject;
             //spawnPosition at Bounder x and random between ymin and ymax
             //a.transform.position = new Vector2(screenBounds.x, Random.Range(-screenBounds.y, screenBounds.y));
-            a.transform.position = new Vector2(3, 2);
+            a.transform.position = new Vector2(0, 5);
             Level1Storage.CruiserCount ++;
         }
     
