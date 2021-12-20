@@ -15,7 +15,7 @@ public class DeployCarrier : MonoBehaviour
         private void spawnEnemy(){
             GameObject a = Instantiate(CarrierPrefab) as GameObject;
             //a.transform.position = GetCarrierPosition();
-            a.transform.position = new Vector2(0, 4);
+            a.transform.position = new Vector2(0, 5);
             Level1Storage.CarrierCount ++; 
         }
     
