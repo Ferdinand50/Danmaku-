@@ -21,7 +21,7 @@ public class DeployBoss : MonoBehaviour
     
     IEnumerator BossWave(){
         // change this to boolean to stop spawning if certain things happend
-        while(Level1Storage.BossCount < 1 & Level1Storage.SupporterCount > 2){
+        while(Level1Storage.BossCount < 1 ){
         yield return new WaitForSeconds(respawnTime);
         spawnEnemy();    
         }

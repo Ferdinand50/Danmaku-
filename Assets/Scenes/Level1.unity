@@ -139,6 +139,9 @@ GameObject:
   - component: {fileID: 43569244}
   - component: {fileID: 43569243}
   - component: {fileID: 43569245}
+  - component: {fileID: 43569248}
+  - component: {fileID: 43569246}
+  - component: {fileID: 43569247}
   m_Layer: 0
   m_Name: Fantasy 1
   m_TagString: Untagged
@@ -325,7 +328,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -380,6 +383,48 @@ MonoBehaviour:
   minx_outside: -8
   maxx_outside: 8
   y_outside: 5
+--- !u!114 &43569246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43569237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c8a224235ead34c94ae902864a1a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BossPrefab: {fileID: 2161198153447598769, guid: c669f89eb22cfa8408dfbdf214c015e2, type: 3}
+  respawnTime: 60
+--- !u!114 &43569247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43569237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837b3efa60081474da0cdf1b3197a624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SupporterPrefab: {fileID: 4465904709255721457, guid: 35d9fcbd18bede14b97295589ab1270d, type: 3}
+  respawnTime: 15
+--- !u!114 &43569248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43569237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bf78c3407404a04da38b26d5b1759d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CarrierPrefab: {fileID: 2472983083918086457, guid: 570f3cb6359274e45a3e5aa3aea4fb28, type: 3}
+  respawnTime: 33
 --- !u!1 &228205983
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1041,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8818459719733552468, guid: 53c7ff81594197a4e9642b6e1dafa2ea, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8818459719733552468, guid: 53c7ff81594197a4e9642b6e1dafa2ea, type: 3}
       propertyPath: m_LocalPosition.x
