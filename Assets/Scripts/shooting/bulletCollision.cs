@@ -17,8 +17,12 @@ public class bulletCollision : MonoBehaviour
         {
             Destroy(coll.gameObject);
             GlobalVariableStorage.score = GlobalVariableStorage.score + 10;
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        if (coll.gameObject.CompareTag("EnemyProjectileTraverse"))
+        {
+            Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), coll.gameObject.GetComponent<Collider2D>());
+        }
         
     }
 }

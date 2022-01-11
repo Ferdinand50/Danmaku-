@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class singleGun : MonoBehaviour
 {
-
     public Transform firePointmiddle;
     public GameObject bulletPrefab;
 
@@ -29,11 +28,7 @@ public class singleGun : MonoBehaviour
         var bulletMid = Instantiate(bulletPrefab, firePointmiddle.position, firePointmiddle.rotation);
         Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), GetComponent<Collider2D>());
 
-        Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), bulletRight.GetComponent<Collider2D>());
-        Physics2D.IgnoreCollision(bulletMid.GetComponent<Collider2D>(), bulletLeft.GetComponent<Collider2D>());
-
-        bulletMid.tag = "EnemyProjectile";
-
+        bulletMid.tag = "EnemyProjectileTraverse";
 
     }
 }
