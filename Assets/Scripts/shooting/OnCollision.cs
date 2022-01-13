@@ -23,7 +23,7 @@ public class OnCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GlobalVariableStorage.playerHealth == 0)
+        if (GlobalVariableStorage.playerHealth <= 0)
         {
             Destroy(gameObject);
         }
