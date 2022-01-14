@@ -17,7 +17,12 @@ public class DeployBoss : MonoBehaviour
 
             a.transform.position = new Vector2(0, 5);
             Level1Storage.BossCount ++;
-        }
+            var CarrierObject = GameObject.Find("Carrier(Clone)");
+            //while (CarrierObject){
+                Destroy(CarrierObject);
+            //}
+            
+    }
     
     IEnumerator BossWave(){
         // change this to boolean to stop spawning if certain things happend

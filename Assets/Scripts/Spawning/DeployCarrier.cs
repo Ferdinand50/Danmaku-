@@ -21,7 +21,8 @@ public class DeployCarrier : MonoBehaviour
     
     IEnumerator CarrierWave() {
         // change this to boolean to stop spawning if certain things happend
-        while(Level1Storage.CarrierCount < 1){
+        while(Level1Storage.CarrierCount < 1 && Level1Storage.BossCount < 1)
+        {
         yield return new WaitForSeconds(respawnTime);
         spawnEnemy();
         

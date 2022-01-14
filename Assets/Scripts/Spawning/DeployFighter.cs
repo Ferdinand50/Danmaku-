@@ -30,7 +30,8 @@ public class DeployFighter : MonoBehaviour
     //spawns figher if the carrier exist
     IEnumerator FighterWave() {
         // change this to boolean to stop spawning if certain things happend
-        while(Level1Storage.FighterCount < 15){
+        while(Level1Storage.FighterCount < 15 && Level1Storage.BossCount < 1)
+        {
         yield return new WaitForSeconds(respawnTime);
         var CarrierObject = GameObject.Find("Carrier(Clone)");
         if(CarrierObject){

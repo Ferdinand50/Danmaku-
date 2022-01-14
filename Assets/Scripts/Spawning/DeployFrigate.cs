@@ -30,7 +30,8 @@ public class DeployFrigate : MonoBehaviour
     
     IEnumerator FrigateWave() {
         // change this to boolean to stop spawning if certain things happend
-        while(Level1Storage.FregatesCount < 5){
+        while(Level1Storage.FregatesCount < 5 && Level1Storage.BossCount < 1)
+        {
         yield return new WaitForSeconds(respawnTime);
         spawnEnemy();
         spawnEnemy();

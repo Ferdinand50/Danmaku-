@@ -21,7 +21,8 @@ public class DeploySupporter : MonoBehaviour
     
     IEnumerator FrigateWave(){
         // change this to boolean to stop spawning if certain things happend
-        while(Level1Storage.SupporterCount < 6 ){
+        while(Level1Storage.SupporterCount < 6 && Level1Storage.BossCount < 1)
+        {
         yield return new WaitForSeconds(respawnTime);
         spawnEnemy(); 
             }   

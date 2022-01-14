@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -8548283882364967190}
   - component: {fileID: 1552420956942587589}
   - component: {fileID: 4739930928202108088}
+  - component: {fileID: -6395889562380560475}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -244,5 +245,24 @@ MonoBehaviour:
   minY: -0.6
   maxY: 3.14
   speed: 0.5
+  doublespeed: 0
+  tempspeed: 0
+--- !u!114 &-6395889562380560475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2161198153447598769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10acc054ac0e6964a9ea020323e3cfc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: -8.4
+  maxX: 8.4
+  minY: -0.6
+  maxY: 3.14
+  speed: 0.25
   doublespeed: 0
   tempspeed: 0
