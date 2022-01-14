@@ -244,10 +244,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de19bffb4236604e91ecc258a32b5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -8.4
-  maxX: 8.4
-  minY: -0.6
-  maxY: 3.14
+  minX: -4.4
+  maxX: 4.3
+  minY: -2
+  maxY: 8
   speed: 0.5
   doublespeed: 0
   tempspeed: 0

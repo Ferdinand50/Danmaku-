@@ -19,6 +19,7 @@ public class DeployingCruiser : MonoBehaviour
             //a.transform.position = new Vector2(screenBounds.x, Random.Range(-screenBounds.y, screenBounds.y));
             a.transform.position = new Vector2(0, 5);
             Level1Storage.CruiserCount ++;
+            Level1Storage.CruiserCountAlive ++;
         }
     
     IEnumerator FrigateWave(){

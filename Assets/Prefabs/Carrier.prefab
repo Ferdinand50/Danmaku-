@@ -98,10 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de19bffb4236604e91ecc258a32b5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -8.4
-  maxX: 8.4
-  minY: -0.6
-  maxY: 2
+  minX: -4.4
+  maxX: 4.3
+  minY: -2
+  maxY: 8
   speed: 1
   doublespeed: 0
   tempspeed: 0
@@ -194,4 +194,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d54f5f56422a943948e3322a15f2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 50
+  healthPoints: 200

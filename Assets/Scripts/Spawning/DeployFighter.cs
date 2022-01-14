@@ -26,6 +26,7 @@ public class DeployFighter : MonoBehaviour
             //a.transform.position = GetCarrierPosition();
             a.transform.position = CarrierPosition;
             Level1Storage.FregatesCount ++; 
+            Level1Storage.FregatesCountAlive ++; 
         }
     //spawns figher if the carrier exist
     IEnumerator FighterWave() {
