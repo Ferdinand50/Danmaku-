@@ -14,6 +14,8 @@ public class Spawner : MonoBehaviour
     public float timeToSpawn;
     private float currentTimeToSpawn;
     private bool FrigateSpawned = true;
+    private bool SupporterSpawned = true;
+    private bool CarrierSpawned = true;
 
     void Start()
     {
@@ -33,7 +35,30 @@ public class Spawner : MonoBehaviour
         if(Level1Storage.FregatesCount == 4 & Level1Storage.FregatesCountDead == 3 & FrigateSpawned){
         SpawnObjectCruiser();
         FrigateSpawned = false;
-        
+        }
+        if(Level1Storage.FregatesCount == 4 & Level1Storage.CruiserCountDead == 1){
+        SpawnObjectFregate();
+        SpawnObjectFregate();
+        }
+        if(Level1Storage.CruiserCount == 1 & Level1Storage.FregatesCountDead == 6){
+        SpawnObjectFregate();
+        SpawnObjectFregate();
+        SpawnObjectCruiser();
+        }
+        if(Level1Storage.CruiserCount == 2 & Level1Storage.FregatesCountDead == 8 & SupporterSpawned){
+        SpawnObjectSupporter();
+        SpawnObjectSupporter();
+        SupporterSpawned = false;
+        }
+        if(Level1Storage.SupporterCountDead == 2 & Level1Storage.SupporterCount == 2) {
+        SpawnObjectSupporter();
+        SpawnObjectSupporter();
+        SpawnObjectSupporter();
+        SpawnObjectSupporter();
+        }
+        if(Level1Storage.SupporterCountDead == 6 & Level1Storage.SupporterCount == 6 & CarrierSpawned) {
+        SpawnObjectCarrier();
+        CarrierSpawned = false;
         }
     }
     
