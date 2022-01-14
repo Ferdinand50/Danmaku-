@@ -21,9 +21,9 @@ public class DeployBoss : MonoBehaviour
 
 =======
             Level1Storage.BossCountAlive ++;
-            var CarrierObject = GameObject.Find("Carrier(Clone)");
+            //var CarrierObject = GameObject.Find("Carrier(Clone)");
             //while (CarrierObject){
-                Destroy(CarrierObject);
+            //    Destroy(CarrierObject);
             //}
             
 >>>>>>> 6dcb191e3e9f9d9f454e3ac0fb032f10b17fc4b3
