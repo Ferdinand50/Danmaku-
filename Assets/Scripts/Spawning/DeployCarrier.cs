@@ -17,6 +17,7 @@ public class DeployCarrier : MonoBehaviour
             //a.transform.position = GetCarrierPosition();
             a.transform.position = new Vector2(0, 5);
             Level1Storage.CarrierCount ++; 
+            Level1Storage.CarrierCountAlive ++;
         }
     
     IEnumerator CarrierWave() {
