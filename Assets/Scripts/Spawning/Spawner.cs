@@ -16,6 +16,9 @@ public class Spawner : MonoBehaviour
     private bool FrigateSpawned = true;
     private bool SupporterSpawned = true;
     private bool CarrierSpawned = true;
+    private bool ReadyForBoss = false;
+    private bool BossSpawned = true;
+    private bool BossDead = false;
 
     void Start()
     {
@@ -60,11 +63,26 @@ public class Spawner : MonoBehaviour
         SpawnObjectCarrier();
         CarrierSpawned = false;
         }
+        if(Level1Storage.CarrierCountDead == 1 & Level1Storage.SupporterCount ==6) {
+        SpawnObjectSupporter();
+        SpawnObjectSupporter();
+        SpawnObjectCruiser();
+        }
+        if(Level1Storage.SupporterCountDead ==8 & Level1Storage.SupporterCount ==8) {
+        SpawnObjectFregate();
+        SpawnObjectSupporter();
+        SpawnObjectCruiser();
+        ReadyForBoss = true;
+        }
+        if(ReadyForBoss & BossSpawned & Level1Storage.SupporterCountDead == 9) {
+        SpawnObjectBoss();
+        BossSpawned = false;
+        }
     }
     
     public void SpawnObjectBoss(){
         targetPosition = GetRandomPosition();
-        Instantiate(Boss, transform.position, transform.rotation);
+        Instantiate(Boss, transform.position, Boss.transform.rotation);
         Level1Storage.BossCount ++;
         Level1Storage.BossCountAlive ++;
     }
@@ -79,14 +97,14 @@ public class Spawner : MonoBehaviour
     
     public void SpawnObjectCruiser(){
         targetPosition = GetRandomPosition();
-        Instantiate(Cruiser, transform.position, transform.rotation);
+        Instantiate(Cruiser, targetPosition, transform.rotation);
         Level1Storage.CruiserCount ++;
         Level1Storage.CruiserCountAlive ++;
     }
     
     public void SpawnObjectCarrier(){
         targetPosition = GetRandomPosition();
-        Instantiate(Carrier, transform.position, transform.rotation);
+        Instantiate(Carrier, targetPosition, transform.rotation);
         Level1Storage.CarrierCount ++;
         Level1Storage.CarrierCountAlive ++;
     }
@@ -94,7 +112,7 @@ public class Spawner : MonoBehaviour
     
     public void SpawnObjectSupporter(){
         targetPosition = GetRandomPosition();
-        Instantiate(Supporter, transform.position, transform.rotation);
+        Instantiate(Supporter, targetPosition, transform.rotation);
         Level1Storage.SupporterCount ++;
         Level1Storage.SupporterCountAlive ++;
     }
