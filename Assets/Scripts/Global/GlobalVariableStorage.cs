@@ -8,10 +8,14 @@ public class GlobalVariableStorage : MonoBehaviour
     public static int globalVariable;
     public static int playerHealth;
     public static int score;
+    public static Vector2 positionPlayer;
+    public static int BossHP;
+    public static int BossMaxHP = 200;
     // Start is called before the first frame update
     void Start()
     {
-        playerHealth = 3;
+        
+        playerHealth = 100;
         score = 0;
     }
 

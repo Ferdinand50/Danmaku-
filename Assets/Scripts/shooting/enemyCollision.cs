@@ -10,7 +10,11 @@ public class enemyCollision : MonoBehaviour
 
     void Start()
     {
-
+        if (gameObject.name.Contains("Boss") == true)
+        {
+            healthPoints = GlobalVariableStorage.BossMaxHP;
+            GlobalVariableStorage.BossHP = healthPoints;
+        }
 
     }
     void OnCollisionEnter2D(Collision2D coll)
@@ -25,12 +29,16 @@ public class enemyCollision : MonoBehaviour
             Destroy(coll.gameObject);
             healthPoints = healthPoints - 1;
         }
-        
+        if (gameObject.name.Contains("Boss") == true)
+        {
+            GlobalVariableStorage.BossHP = healthPoints;
+        }
+
     }
     // Update is called once per frame
     void Update()
     {
-        if (healthPoints == 0)
+        if (healthPoints <= 0)
         {
             if (gameObject.name.Contains("Cruiser") == true)
             {

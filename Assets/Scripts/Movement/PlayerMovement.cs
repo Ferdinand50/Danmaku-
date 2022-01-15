@@ -24,9 +24,10 @@ public class PlayerMovement : MonoBehaviour
             targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
         }
         this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
+        GlobalVariableStorage.positionPlayer = this.transform.position;
         //this.transform.position = targetPosition;
 
-           
-       
+
+
     }
 }
