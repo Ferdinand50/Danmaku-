@@ -140,7 +140,7 @@ public class bossShoot : MonoBehaviour
         firePointmiddlecenter.Rotate(0.0f, 0.0f, randomRotation);
         var bulletZero = Instantiate(bulletBossTwoPrefab, firePointmiddlecenter.position, firePointmiddlecenter.rotation);
         Physics2D.IgnoreCollision(bulletZero.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-        bulletZero.tag = "EnemyProjectileTraverse";
+        bulletZero.tag = "EnemyProjectile";
     }
     void ShootThree()
     {

@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  lifeTime: 3
+  lifeTime: 5
   rb: {fileID: 1782623620691647767}
 --- !u!82 &4124723407469049140
 AudioSource:
@@ -150,13 +150,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a263a71355fe35c47ac4f177f1fe6681, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.033
+  m_Volume: 0.086
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 115
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
