@@ -232,6 +232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  barycentreTwo: 0.1
+  barycentreTwo: 0.15
   lifeTime: 10
   rb: {fileID: 1782623620691647767}

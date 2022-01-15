@@ -369,9 +369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10acc054ac0e6964a9ea020323e3cfc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -4.4
-  maxX: 4.3
-  minY: -1
+  minX: -3.5
+  maxX: 3.5
+  minY: 0
   maxY: 2
   speed: 2.5
   doublespeed: 0
@@ -401,9 +401,9 @@ MonoBehaviour:
   bulletBossTwoPrefab: {fileID: 4574212404333469982, guid: 64c35bc9c8605a84d8809709251a8c42, type: 3}
   bulletBossThreePrefab: {fileID: 4574212404333469982, guid: ec989a7be72440846983c5d259a46f00, type: 3}
   bulletBossFourPrefab: {fileID: 4574212404333469982, guid: ab53093af2d3c9043bc472d33e1a9023, type: 3}
-  fireRateOne: 0.13
-  fireRateTwo: 0.25
-  fireRateThree: 0.4
+  fireRateOne: 0.15
+  fireRateTwo: 0.3
+  fireRateThree: 0.45
   fireRateFour: 0.15
   fireRateFive: 0.35
 --- !u!1 &2745086817176454904

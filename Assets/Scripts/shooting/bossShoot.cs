@@ -43,14 +43,14 @@ public class bossShoot : MonoBehaviour
         if (Time.time > nextFire)
         {
             
-            if ((100 * GlobalVariableStorage.BossHP) / GlobalVariableStorage.BossMaxHP >= 80)
+            if ((100 * GlobalVariableStorage.BossHP) / GlobalVariableStorage.BossMaxHP >= 90)
             {
                 ShootOne();
                 // calulate when to fire
                 nextFire = Time.time + fireRateOne;
             }
-            //First threshold 85%
-            if ((100*GlobalVariableStorage.BossHP)/ GlobalVariableStorage.BossMaxHP < 80 && (100 * GlobalVariableStorage.BossHP) / GlobalVariableStorage.BossMaxHP >= 60)
+            //First threshold 90%
+            if ((100*GlobalVariableStorage.BossHP)/ GlobalVariableStorage.BossMaxHP < 90 && (100 * GlobalVariableStorage.BossHP) / GlobalVariableStorage.BossMaxHP >= 60)
             {
                 ShootTwo();
                 // calulate when to fire
@@ -254,8 +254,9 @@ public class bossShoot : MonoBehaviour
         if (switchShoot == 0 )
         {
             ShootTwo();
+            ShootThree();
         }
-        if (switchShoot == 10)
+        if (switchShoot == 15)
         {
             ShootThree();
         }
@@ -267,7 +268,7 @@ public class bossShoot : MonoBehaviour
 
 
         switchShoot++;
-        if (switchShoot== 20){
+        if (switchShoot== 30){
             switchShoot =0;
         }
     }
