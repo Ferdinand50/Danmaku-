@@ -162,11 +162,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de19bffb4236604e91ecc258a32b5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -4.4
-  maxX: 4.3
-  minY: -2
-  maxY: 8
-  speed: 0.75
+  minX: -3
+  maxX: 3
+  minY: -1
+  maxY: 6
+  speed: 2
   doublespeed: 0
   tempspeed: 0
 --- !u!114 &567863206004887963
@@ -185,7 +185,7 @@ MonoBehaviour:
   firePointright: {fileID: 567863206104012522}
   firePointmiddle: {fileID: 567863204973106683}
   bulletPrefab: {fileID: 4574212404333469982, guid: 38d76508280274b4db4957b1ee914d62, type: 3}
-  fireRate: 3
+  fireRate: 0.3
 --- !u!50 &567863206004887961
 Rigidbody2D:
   serializedVersion: 4
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d54f5f56422a943948e3322a15f2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 10
+  healthPoints: 20
 --- !u!1 &567863206104012437
 GameObject:
   m_ObjectHideFlags: 0

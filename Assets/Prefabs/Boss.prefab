@@ -369,11 +369,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10acc054ac0e6964a9ea020323e3cfc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -3.5
-  maxX: 3.5
-  minY: 0
-  maxY: 2
-  speed: 2.5
+  minX: 1
+  maxX: 1
+  minY: 4
+  maxY: 6
+  speed: 1
   doublespeed: 0
   tempspeed: 0
 --- !u!114 &-5297047610060036182

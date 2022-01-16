@@ -100,7 +100,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8964321285109424304}
   - component: {fileID: 8964321285109424305}
-  - component: {fileID: 8964321285109424306}
   - component: {fileID: 8964321285109424301}
   - component: {fileID: 8964321285109424307}
   - component: {fileID: 8964321285109424300}
@@ -181,24 +180,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8964321285109424306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8964321285109424310}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 825c6083e16ed0e47a0382af6ff70e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationCenter: {fileID: 0}
-  rotationRadius: 6
-  angularSpeed: -0.5
-  posX: 0
-  posY: 0
-  angle: -1
 --- !u!50 &8964321285109424301
 Rigidbody2D:
   serializedVersion: 4
@@ -232,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d54f5f56422a943948e3322a15f2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 1
+  healthPoints: 10
 --- !u!60 &8964321285109424300
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -308,11 +289,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de19bffb4236604e91ecc258a32b5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -4.4
-  maxX: 4.3
-  minY: -2
-  maxY: 8
-  speed: 1.5
+  minX: -3
+  maxX: 3
+  minY: -1
+  maxY: 6
+  speed: 4
   doublespeed: 0
   tempspeed: 0
 --- !u!114 &6817585917119791071
@@ -331,4 +312,4 @@ MonoBehaviour:
   firePointright: {fileID: 4067821015032551337}
   firePointmiddle: {fileID: 707713583473822797}
   bulletPrefab: {fileID: 4574212404333469982, guid: 38d76508280274b4db4957b1ee914d62, type: 3}
-  fireRate: 2
+  fireRate: 1

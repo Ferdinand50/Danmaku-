@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d54f5f56422a943948e3322a15f2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 1
+  healthPoints: 10
 --- !u!114 &-2500094089567415613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,11 +143,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de19bffb4236604e91ecc258a32b5cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: -4.4
-  maxX: 4.3
-  minY: -2
-  maxY: 8
-  speed: 1.5
+  minX: -3
+  maxX: 3
+  minY: -1
+  maxY: 6
+  speed: 3
   doublespeed: 0
   tempspeed: 0
 --- !u!60 &-990458370339892103
@@ -230,4 +230,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePointmiddle: {fileID: 2579264568151690887}
   bulletPrefab: {fileID: 4135334541940631553, guid: e990df2b69c87054f875b8dded10392b, type: 3}
-  fireRate: 2
+  fireRate: 0.5
