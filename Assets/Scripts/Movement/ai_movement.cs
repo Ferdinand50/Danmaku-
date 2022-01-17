@@ -5,10 +5,10 @@ using UnityEngine;
 public class ai_movement : MonoBehaviour
 {
 
-    public float minX;
-    public float maxX;
-    public float minY;
-    public float maxY;
+    public float minX = -3;
+    public float maxX =3;
+    public float minY=-1;
+    public float maxY =6;
 
 
     float roation;
@@ -43,7 +43,7 @@ public class ai_movement : MonoBehaviour
 
         //doubles speed if outside of box
         if (transform.position.y > maxY) {
-            speed = doublespeed;
+            speed = 6;
         } else {
             speed = tempspeed;
         }

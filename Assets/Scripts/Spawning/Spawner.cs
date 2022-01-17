@@ -119,7 +119,7 @@ public class Spawner : MonoBehaviour
     
     Vector2 GetRandomPosition() {
         float randomX = Random.Range(-3, 3);
-        float randomY = Random.Range(10, 10);
+        float randomY = Random.Range(10, 15);
         return new Vector2(randomX, randomY);
     }
 }

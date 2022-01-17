@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FighterPrefab: {fileID: 1212533901093789159, guid: 3f6a75890a536c748a8ac0636e943320, type: 3}
-  respawnTime: 5
+  respawnTime: 3
   minx_outside: -8
   maxx_outside: 8
   y_outside: 5
@@ -1079,11 +1079,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8818459719733552468, guid: 53c7ff81594197a4e9642b6e1dafa2ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.99
+      value: -3.01
       objectReference: {fileID: 0}
     - target: {fileID: 8818459719733552468, guid: 53c7ff81594197a4e9642b6e1dafa2ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.33
+      value: -0.69
       objectReference: {fileID: 0}
     - target: {fileID: 8818459719733552468, guid: 53c7ff81594197a4e9642b6e1dafa2ea, type: 3}
       propertyPath: m_LocalPosition.z
