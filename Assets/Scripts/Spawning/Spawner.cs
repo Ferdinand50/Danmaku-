@@ -10,6 +10,8 @@ public class Spawner : MonoBehaviour
     public GameObject Cruiser;
     public GameObject Carrier;
     public GameObject Supporter;
+    private AudioManager theAM;
+    public AudioClip newTrack;
     Vector2 targetPosition;
     public float timeToSpawn;
     private float currentTimeToSpawn;
@@ -19,13 +21,18 @@ public class Spawner : MonoBehaviour
     private bool ReadyForBoss = false;
     private bool BossSpawned = true;
     private bool BossDead = false;
+    
+    
+
+
+    
 
     void Start()
     {
         
         SpawnObjectFregate();
         SpawnObjectFregate();
-        
+        theAM = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -77,6 +84,7 @@ public class Spawner : MonoBehaviour
         if(ReadyForBoss & BossSpawned & Level1Storage.SupporterCountDead == 9) {
         SpawnObjectBoss();
         BossSpawned = false;
+        theAM.ChangeBGM(newTrack);
         }
     }
     
