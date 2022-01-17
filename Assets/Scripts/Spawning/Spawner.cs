@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
@@ -86,6 +87,10 @@ public class Spawner : MonoBehaviour
         BossSpawned = false;
         theAM.ChangeBGM(newTrack);
         }
+        if(Level1Storage.BossCountDead == 1) {
+        StartCoroutine(waiter());
+        
+        }
     }
     
     public void SpawnObjectBoss(){
@@ -130,4 +135,13 @@ public class Spawner : MonoBehaviour
         float randomY = Random.Range(10, 15);
         return new Vector2(randomX, randomY);
     }
+
+    IEnumerator waiter()
+{
+
+    yield return new WaitForSeconds(4);
+    SceneManager.LoadScene("Menu");
+
 }
+}
+
