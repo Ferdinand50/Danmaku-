@@ -22,8 +22,13 @@ public class shooting : MonoBehaviour
             // calulate when to fire
             nextFire = Time.time + fireRate;
         }
-
-        if (GlobalVariableStorage.score > 1700) {
+        if (GlobalVariableStorage.score > 5000) {
+            fireRate = 0.1F;
+        }
+        else if (GlobalVariableStorage.score > 3500) {
+            fireRate = 0.25F;
+        }
+        else if (GlobalVariableStorage.score > 1700) {
             fireRate = 0.1F;
         }
         else if (GlobalVariableStorage.score > 600) {
@@ -34,7 +39,7 @@ public class shooting : MonoBehaviour
 
     void Shoot ()
     {
-        if (GlobalVariableStorage.score > 2500) {
+        if (GlobalVariableStorage.score > 3500) {
             var playerBullet1 = Instantiate(playerBulletPrefab, playerGun1.position, playerGun1.rotation);
             Physics2D.IgnoreCollision(playerBullet1.GetComponent<Collider2D>(), GetComponent<Collider2D>());
             var playerBullet2 = Instantiate(playerBulletPrefab, playerGun2.position, playerGun2.rotation);

@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9d54f5f56422a943948e3322a15f2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 1
+  healthPoints: 25
 --- !u!60 &8964321285109424300
 PolygonCollider2D:
   m_ObjectHideFlags: 0
