@@ -42,7 +42,7 @@ public class enemyCollision : MonoBehaviour
         {
             if (gameObject.name.Contains("Cruiser") == true)
             {
-                GlobalVariableStorage.score = GlobalVariableStorage.score + 500;
+                GlobalVariableStorage.score = GlobalVariableStorage.score + 200;
                 Level1Storage.CruiserCountDead ++;
                 Level1Storage.CruiserCountAlive --;
             }
@@ -54,25 +54,25 @@ public class enemyCollision : MonoBehaviour
             }
             if (gameObject.name.Contains("Fighter") == true)
             {
-                //GlobalVariableStorage.score = GlobalVariableStorage.score + 500;
+                GlobalVariableStorage.score = GlobalVariableStorage.score + 50;
                 Level1Storage.FighterCountDead ++;
                 Level1Storage.FighterCountAlive --;
             }
             if (gameObject.name.Contains("Carrier") == true)
             {
-                //GlobalVariableStorage.score = GlobalVariableStorage.score + 100;
+                GlobalVariableStorage.score = GlobalVariableStorage.score + 250;
                 Level1Storage.CarrierCountDead ++;
                 Level1Storage.CarrierCountAlive --;
             }
             if (gameObject.name.Contains("Boss") == true)
             {
-                //GlobalVariableStorage.score = GlobalVariableStorage.score + 500;
+                GlobalVariableStorage.score = GlobalVariableStorage.score + 1000;
                 Level1Storage.BossCountDead ++;
                 Level1Storage.BossCountAlive --;
             }
             if (gameObject.name.Contains("Supporter") == true)
             {
-                //GlobalVariableStorage.score = GlobalVariableStorage.score + 100;
+                GlobalVariableStorage.score = GlobalVariableStorage.score + 100;
                 Level1Storage.SupporterCountDead ++;
                 Level1Storage.SupporterCountAlive --;
             }

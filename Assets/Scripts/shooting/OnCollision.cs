@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OnCollision : MonoBehaviour
 {
@@ -25,7 +26,21 @@ public class OnCollision : MonoBehaviour
     {
         if (GlobalVariableStorage.playerHealth <= 0)
         {
+            //Debug.Log("DEAD");
+            //StartCoroutine(waiter());
+            SceneManager.LoadScene("Menu");
             Destroy(gameObject);
+            
+            
         }
     }
+
+        IEnumerator waiter()
+{
+
+    yield return new WaitForSeconds(2);
+    SceneManager.LoadScene("Menu");
+    
+
+}
 }

@@ -3,7 +3,13 @@ guid: a052d5d8839aad44791cb9eece947171
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Boss: {instanceID: 0}
+  - Fregate: {instanceID: 0}
+  - Cruiser: {instanceID: 0}
+  - Carrier: {instanceID: 0}
+  - Supporter: {instanceID: 0}
+  - newTrack: {fileID: 8300000, guid: b5dccc685d62b9545afd0fa48407527f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

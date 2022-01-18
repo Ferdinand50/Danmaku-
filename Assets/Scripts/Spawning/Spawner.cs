@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Spawner : MonoBehaviour
     public GameObject Cruiser;
     public GameObject Carrier;
     public GameObject Supporter;
+    private AudioManager theAM;
+    public AudioClip newTrack;
     Vector2 targetPosition;
     public float timeToSpawn;
     private float currentTimeToSpawn;
@@ -19,13 +22,18 @@ public class Spawner : MonoBehaviour
     private bool ReadyForBoss = false;
     private bool BossSpawned = true;
     private bool BossDead = false;
+    
+    
+
+
+    
 
     void Start()
     {
         
         SpawnObjectFregate();
         SpawnObjectFregate();
-        
+        theAM = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -77,6 +85,11 @@ public class Spawner : MonoBehaviour
         if(ReadyForBoss & BossSpawned & Level1Storage.SupporterCountDead == 9) {
         SpawnObjectBoss();
         BossSpawned = false;
+        theAM.ChangeBGM(newTrack);
+        }
+        if(Level1Storage.BossCountDead == 1) {
+        StartCoroutine(waiter());
+        
         }
     }
     
@@ -122,4 +135,13 @@ public class Spawner : MonoBehaviour
         float randomY = Random.Range(10, 15);
         return new Vector2(randomX, randomY);
     }
+
+    IEnumerator waiter()
+{
+
+    yield return new WaitForSeconds(4);
+    SceneManager.LoadScene("Menu");
+
 }
+}
+
