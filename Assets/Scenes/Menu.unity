@@ -477,7 +477,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 146597375}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: a7aa9f33ff22b844a8687836ab364d18, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &146597375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,6 +1616,7 @@ GameObject:
   - component: {fileID: 671674823}
   - component: {fileID: 671674822}
   - component: {fileID: 671674826}
+  - component: {fileID: 671674827}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1791,6 +1804,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!225 &671674827
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671674821}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &708832337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2967,7 +2992,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1394783702}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1394783702
 MonoBehaviour:
   m_ObjectHideFlags: 0
