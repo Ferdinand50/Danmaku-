@@ -15,6 +15,26 @@ public class enemyCollision : MonoBehaviour
             healthPoints = GlobalVariableStorage.BossMaxHP;
             GlobalVariableStorage.BossHP = healthPoints;
         }
+        else if (gameObject.name.Contains("Cruiser") == true)
+        {
+            healthPoints = 20 + GlobalVariableStorage.score/50;
+        }
+        else if (gameObject.name.Contains("Frigate") == true)
+        {
+            healthPoints = 10 + GlobalVariableStorage.score/75;
+        }
+        else if (gameObject.name.Contains("Fighter") == true)
+        {
+            healthPoints = 1 + GlobalVariableStorage.score/500;
+        }
+        else if (gameObject.name.Contains("Carrier") == true)
+        {
+            healthPoints = 30 + GlobalVariableStorage.score/50;
+        }
+        else if (gameObject.name.Contains("Supporter") == true)
+        {
+            healthPoints = 15 + GlobalVariableStorage.score/100;
+        }
 
     }
     void OnCollisionEnter2D(Collision2D coll)
