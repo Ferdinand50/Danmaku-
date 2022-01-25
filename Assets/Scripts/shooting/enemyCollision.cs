@@ -17,7 +17,7 @@ public class enemyCollision : MonoBehaviour
         }
         else if (gameObject.name.Contains("Cruiser") == true)
         {
-            healthPoints = 20 + GlobalVariableStorage.score/50;
+            healthPoints = 10 + GlobalVariableStorage.score/60;
         }
         else if (gameObject.name.Contains("Frigate") == true)
         {
@@ -25,15 +25,15 @@ public class enemyCollision : MonoBehaviour
         }
         else if (gameObject.name.Contains("Fighter") == true)
         {
-            healthPoints = 1 + GlobalVariableStorage.score/500;
+            healthPoints = 1 + GlobalVariableStorage.score/1200;
         }
-        else if (gameObject.name.Contains("Carrier") == true)
+        else if (gameObject.name.Contains("Carrier") == true) //MidBoss => more powerful
         {
-            healthPoints = 30 + GlobalVariableStorage.score/50;
+            healthPoints = 50 + GlobalVariableStorage.score/30;
         }
         else if (gameObject.name.Contains("Supporter") == true)
         {
-            healthPoints = 15 + GlobalVariableStorage.score/100;
+            healthPoints = 20 + GlobalVariableStorage.score/150;
         }
 
     }
@@ -65,36 +65,42 @@ public class enemyCollision : MonoBehaviour
                 GlobalVariableStorage.score = GlobalVariableStorage.score + 200;
                 Level1Storage.CruiserCountDead ++;
                 Level1Storage.CruiserCountAlive --;
+                Level1Storage.TotalCountAlive--;
             }
             if (gameObject.name.Contains("Frigate") == true)
             {
                 GlobalVariableStorage.score = GlobalVariableStorage.score + 100;
                 Level1Storage.FregatesCountDead ++;
                 Level1Storage.FregatesCountAlive --;
+                Level1Storage.TotalCountAlive--;
             }
             if (gameObject.name.Contains("Fighter") == true)
             {
                 GlobalVariableStorage.score = GlobalVariableStorage.score + 50;
                 Level1Storage.FighterCountDead ++;
                 Level1Storage.FighterCountAlive --;
+                Level1Storage.TotalCountAlive--;
             }
             if (gameObject.name.Contains("Carrier") == true)
             {
                 GlobalVariableStorage.score = GlobalVariableStorage.score + 250;
                 Level1Storage.CarrierCountDead ++;
                 Level1Storage.CarrierCountAlive --;
+                Level1Storage.TotalCountAlive--;
             }
             if (gameObject.name.Contains("Boss") == true)
             {
                 GlobalVariableStorage.score = GlobalVariableStorage.score + 1000;
                 Level1Storage.BossCountDead ++;
                 Level1Storage.BossCountAlive --;
+                Level1Storage.TotalCountAlive--;
             }
             if (gameObject.name.Contains("Supporter") == true)
             {
                 GlobalVariableStorage.score = GlobalVariableStorage.score + 100;
                 Level1Storage.SupporterCountDead ++;
                 Level1Storage.SupporterCountAlive --;
+                Level1Storage.TotalCountAlive--;
             }
             Destroy(gameObject);
             

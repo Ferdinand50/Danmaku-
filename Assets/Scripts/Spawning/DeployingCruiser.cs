@@ -20,7 +20,8 @@ public class DeployingCruiser : MonoBehaviour
             a.transform.position = new Vector2(0, 5);
             Level1Storage.CruiserCount ++;
             Level1Storage.CruiserCountAlive ++;
-        }
+            Level1Storage.TotalCountAlive++;
+    }
     
     IEnumerator FrigateWave(){
         // change this to boolean to stop spawning if certain things happend

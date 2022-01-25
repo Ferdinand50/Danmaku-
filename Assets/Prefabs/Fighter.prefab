@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8685918533675861776}
   - component: {fileID: -8689101375679660784}
   - component: {fileID: -2543249032889850383}
-  - component: {fileID: 6814135541518198232}
+  - component: {fileID: -3736105435284105500}
   m_Layer: 0
   m_Name: Fighter
   m_TagString: Enemy
@@ -177,7 +177,7 @@ PolygonCollider2D:
       - {x: 0.085, y: -0.13}
       - {x: 0.21499999, y: -0.03}
       - {x: 0.21499999, y: 0.06}
---- !u!114 &6814135541518198232
+--- !u!114 &-3736105435284105500
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,12 +186,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1212533901093789159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b77f375b34ef0eb44b3c6fd88326531c, type: 3}
+  m_Script: {fileID: 11500000, guid: f14ba25baaf8fc14ba41aceb67c286ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   firePointmiddle: {fileID: 7532211983723555761}
   bulletPrefab: {fileID: 4135334541940631553, guid: e990df2b69c87054f875b8dded10392b, type: 3}
-  fireRate: 0.5
+  fireRate: 0.05
 --- !u!1 &5272789545092488700
 GameObject:
   m_ObjectHideFlags: 0

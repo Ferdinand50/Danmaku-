@@ -25,7 +25,8 @@ public class DeployFighter : MonoBehaviour
             GameObject a = Instantiate(FighterPrefab) as GameObject;
             //a.transform.position = GetCarrierPosition();
             a.transform.position = CarrierPosition;
-            Level1Storage.FregatesCount ++; 
+            Level1Storage.FregatesCount ++;
+            Level1Storage.TotalCountAlive++;
             Level1Storage.FregatesCountAlive ++; 
         }
     //spawns figher if the carrier exist

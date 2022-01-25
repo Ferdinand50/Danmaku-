@@ -27,6 +27,7 @@ public class Level1Storage : MonoBehaviour
     public static int CarrierCountAlive;
     public static int BossCountAlive;
     public static int SupporterCountAlive;
+    public static int TotalCountAlive;
     void Start()
     {
         FregatesCount = 0;
@@ -49,6 +50,8 @@ public class Level1Storage : MonoBehaviour
         CarrierCountAlive = 0;
         BossCountAlive = 0;
         SupporterCountAlive = 0;
+
+        TotalCountAlive = 0;
     }
 
 }

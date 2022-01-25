@@ -16,7 +16,8 @@ public class DeployCarrier : MonoBehaviour
             GameObject a = Instantiate(CarrierPrefab) as GameObject;
             //a.transform.position = GetCarrierPosition();
             a.transform.position = new Vector2(0, 5);
-            Level1Storage.CarrierCount ++; 
+            Level1Storage.CarrierCount ++;
+            Level1Storage.TotalCountAlive++;
             Level1Storage.CarrierCountAlive ++;
         }
     

@@ -17,6 +17,7 @@ public class DeployBoss : MonoBehaviour
 
             a.transform.position = new Vector2(0, 5);
             Level1Storage.BossCount ++;
+            Level1Storage.TotalCountAlive++;
             Level1Storage.BossCountAlive ++;
             //var CarrierObject = GameObject.Find("Carrier(Clone)");
             //while (CarrierObject){

@@ -26,8 +26,8 @@ public class DeployFrigate : MonoBehaviour
             //a.transform.position = new Vector2(screenBounds.x, Random.Range(-screenBounds.y, screenBounds.y));
             a.transform.position = GetOutsidePosition();
             Level1Storage.FregatesCount ++;
-            Level1Storage.FregatesCount ++; 
-            Level1Storage.FregatesCountAlive ++; 
+            Level1Storage.FregatesCountAlive ++;
+            Level1Storage.TotalCountAlive++;
             Debug.Log(Level1Storage.FregatesCountDead);
         }
     

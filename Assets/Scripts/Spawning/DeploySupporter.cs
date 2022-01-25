@@ -17,6 +17,7 @@ public class DeploySupporter : MonoBehaviour
 
             a.transform.position = new Vector2(0, 5);
             Level1Storage.SupporterCount ++;
+            Level1Storage.TotalCountAlive++;
             Level1Storage.SupporterCountAlive ++;
         }
     
