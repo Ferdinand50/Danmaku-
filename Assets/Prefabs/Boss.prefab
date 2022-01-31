@@ -401,11 +401,11 @@ MonoBehaviour:
   bulletBossTwoPrefab: {fileID: 4574212404333469982, guid: 64c35bc9c8605a84d8809709251a8c42, type: 3}
   bulletBossThreePrefab: {fileID: 4574212404333469982, guid: ec989a7be72440846983c5d259a46f00, type: 3}
   bulletBossFourPrefab: {fileID: 4574212404333469982, guid: ab53093af2d3c9043bc472d33e1a9023, type: 3}
-  fireRateOne: 0.15
-  fireRateTwo: 0.3
-  fireRateThree: 0.45
-  fireRateFour: 0.15
-  fireRateFive: 0.35
+  fireRateOne: 0.9
+  fireRateTwo: 0.8
+  fireRateThree: 0.8
+  fireRateFour: 0.5
+  fireRateFive: 0.7
 --- !u!1 &2745086817176454904
 GameObject:
   m_ObjectHideFlags: 0
